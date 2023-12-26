@@ -5,21 +5,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-/*criando as váriáveis*/
+/*Criando as váriáveis*/
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
+/*Deixando os arquivos mais agrupados*/
 *{
-    margin: 0px; /*tirando os espaçamentos*/
+    margin: 0px; 
     padding: 0px;
-    font-size: 1em;
+    font-size: 1em; 
 }
 html, body{
     font-family: var(--fonte1);
     background-color: darkgray;
-    min-height: 100vh; /*ñ entendi o pq*/
+    min-height: 100vh; /*tamanho mínimo do corpo da msg (vh=altura) (vw=largura)*/
 }
 
 header{
@@ -30,11 +31,11 @@ header{
 header>h1{
     font-family: var(--fonte2);
     padding-top: 50px; /*diminuiu o tamanho do padding*/
-    font-size: 10vw; /*pq vw?*/
+    font-size: 10vw; /*10% da tela - mt usado pra ver diminuir o tamanho da letra ao ver no cel*/
     font-variant: small-caps; /*converte as lowercase em uppercase e deixa em destaque as menores em relação às maiores */
 }
 header>p{
-    padding-bottom: 50px;
+    padding-bottom: 50px; /*deixando simétrico*/
 }
 header a, footer a {
     text-decoration: none;
@@ -55,7 +56,7 @@ section{
     padding-bottom: 10vh;
 }
 section>p{
-    padding-bottom: 2em; /*mudou nada pra mim*/
+    padding-bottom: 2em; /*é o espaço entre parágrados (2x o tamanho original)*/
 }
 section.normal{
     background-color: white;
